@@ -60,13 +60,6 @@ form {
 }
 
 
-input,
-button {
-  margin-top: 0.5em;
-  padding: 0.6em;
-  text-align: center;
-}
-
 /* main */
 main {
   position: relative;

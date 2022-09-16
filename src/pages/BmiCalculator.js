@@ -6,6 +6,8 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
+import Input from "../components/Input";
 
 function BmiCalculator() {
   const navigate = useNavigate();
@@ -42,7 +44,7 @@ function BmiCalculator() {
       <form onSubmit={calculateBMI}>
         <div className="form--height">
           <label htmlFor="height">Height (cm)</label>
-          <input
+          <Input
             value={height}
             onChange={handleHeight}
             id="height"
@@ -53,7 +55,7 @@ function BmiCalculator() {
 
         <div className="form--weight">
           <label htmlFor="weight">Weight (kg)</label>
-          <input
+          <Input
             value={weight}
             onChange={handleWeight}
             id="weight"
@@ -62,7 +64,7 @@ function BmiCalculator() {
           />
         </div>
 
-        <button>CALCULATE</button>
+        <Button>CALCULATE</Button>
       </form>
     </main>
   );
