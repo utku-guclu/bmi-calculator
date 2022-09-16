@@ -1,0 +1,155 @@
+:root {
+  --main-color: #2e2c47;
+  --bg: #D61C4E;
+  --alt: #F2D388;
+  --light: #c8d8e8;
+}
+
+.App {
+  text-align: center;
+  color: var(--main-color);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--bg);
+  align-items: center;
+}
+
+nav ul {
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  /* padding: 2em; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  transition: 1s ease all;
+}
+
+footer:hover {
+  display: none;
+
+}
+
+form {
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: var(--main-color);
+}
+
+
+input,
+button {
+  margin-top: 0.5em;
+  padding: 0.6em;
+  text-align: center;
+}
+
+/* main */
+main {
+  position: relative;
+}
+
+#main {
+  background-color: var(--light);
+}
+
+.main,
+.main-bmi,
+.healthy,
+.over-weight,
+.under-weight,
+.obesity {
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  background: url("./img/bmi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--light);
+}
+
+.main-bmi {
+  background: url("./img/whats-bmi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.healthy {
+  background: url("./img/healthy.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.over-weight {
+  background: url("./img/over-weight.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.under-weight {
+  background: url("./img/under-weight.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.obesity {
+  background: url("./img/obesity.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* main */
+
+.item {
+  padding: 1em;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--main-color);
+  margin: 1em;
+}
+
+.item:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.form--height,
+.form--weight {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+
+  nav ul {
+    flex-direction: row;
+  }
+
+}
